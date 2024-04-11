@@ -74,4 +74,4 @@ router.delete("/movies/:id", (req, res) => {
 
 module.exports = router;
 
-// Recuerda usar el archivo request.http o crearlo para hacer uso de estos metodos deleteOne
+// Recuerda usar el archivo request.http o crearlo para hacer uso de estos metodos

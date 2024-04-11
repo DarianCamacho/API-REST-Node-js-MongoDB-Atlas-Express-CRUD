@@ -37,4 +37,4 @@ app.listen(port, () => console.log('server listening on port', port));
 // He creado un archivo llamado .env para guardar mi conexion a MongoDB Atlas
 // ya que seria critico dejarla en este archivo
 // npm install dotenv
-// con eso se podria hacer el usoy la creacion de archivos .env
+// con eso se podria hacer el uso y la creacion de archivos .env

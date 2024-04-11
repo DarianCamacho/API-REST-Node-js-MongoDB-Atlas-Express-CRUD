@@ -1,0 +1,63 @@
+// Para poder separar varios request que podemos tener en nuestro archivo de peticiones utilizamos
+// estos 3 simbolos de ###
+###
+Post http://localhost:9000/api/movies HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "En busca de la felicidad",
+    "director": {
+        "nombre": "Darian Camacho",
+        "nacionalidad": "Nacionalidad del director"
+    },
+    "anio": "2023",
+    "genero": ["Género 1", "Género 2"],
+    "calificacion": ["Calificación 1", "Calificación 2"],
+    "actores": [
+        {
+            "nombre": "Nombre del actor/actriz",
+            "personaje": "Nombre del personaje interpretado"
+        },
+        {
+            "nombre": "Nombre del segundo actor/actriz",
+            "personaje": "Nombre del segundo personaje interpretado"
+        }
+    ],
+    "sinopsis": "sinopsis de la película"
+}
+
+###
+Get http://localhost:9000/api/movies HTTP/1.1
+
+###
+Get http://localhost:9000/api/movies/6617792e957cb00700841707 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/movies/6617792e957cb00700841707 HTTP/1.1
+Content-Type: application/json
+
+{
+
+     "titulo": "Batman Night Knight",
+     "director": {
+        "nombre": "Jhon Doe",
+        "nacionalidad": "Nacionalidad del director"
+    },
+    "anio": "2024",
+    "genero": ["Accion", "Suspenso"],
+    "calificacion": ["12", "21"],
+    "sinopsis": "Batman Night Knight ayuda a librar el crimen de Arkham City",
+    "actores": [
+        {
+            "nombre": "Braulio Sandi",
+            "personaje": "Batman"
+        },
+        {
+            "nombre": "Johan Coto",
+            "personaje": "Joker"
+        }
+    ]
+}
+
+###
+DELETE http://localhost:9000/api/movies/661778f5957cb00700841703 HTTP/1.1
